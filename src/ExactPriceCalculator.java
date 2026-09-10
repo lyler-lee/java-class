@@ -12,8 +12,6 @@ public class ExactPriceCalculator {
         long discountRate = scanner.nextLong();
 
         long subtotalWon = (priceWon * count);
-        ///  long 타입에서 바로 15%를 곱할 수 없기 떄문에,
-        ///  (37,500 * 15) = 먼저 562,500으로 만든 뒤에 100으로 나눔 -> 5,625
         long discountWon = (subtotalWon * discountRate) / 100;
         long paymentWon = subtotalWon - discountWon;
 
